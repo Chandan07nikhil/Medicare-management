@@ -16,8 +16,8 @@ const Appointments = ({appointments}) => {
          </thead>
 
          <tbody>
-            {appointments?.map((item)=> (
-                <tr key={item.id}>
+            {appointments?.map((item, index)=> (
+                <tr key={index}>
                     <th scope='row' className='flex items-center px-6 py-4 text-gray-900 whitespace-nowrap '>
                         <img src={item?.user?.photo} className='w-10 h-10 rounded-full' alt="user-photo" />
                         <div className='pl-3'>
